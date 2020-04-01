@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+}
+
+.blr{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.banner-content{
+    text-align: center;
+    margin-top: 200px;  
+}
+
+.banner-content h3{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Finger Paint', cursive;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.banner-content .button{
+    margin: 50px  40px;
+    letter-spacing: 4px;
+}
+
+.mt-20{
+   margin-top: 20px;
+}
+.mt{
+    margin-bottom: 30px;
+}
+.banner-model{
+    font-size: 80px;
+    text-align: center;
+}
+.options{
+    display: inline-block;
+    padding : 40px 36px 30px 90px;
+}
+.option-1 i{
+    margin: 0 50px 10px 30px;
+}
+.option-2 .userBtn{
+   padding: 6px 20px;
+    text-align: center;
+}
+.option-2 button{
+    margin: 10px 50px 10px 30px;
+
+}
+.option-2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-section {
+   text-align: center;
+  
+}
+.card-section .title{
+    font-size: 30px;
+    font-family: 'Finger Paint', cursive;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+footer{
+    height: 80px;
+    margin-top: 50px;
+}
+
+footer>.container, footer .row{
+    height: 100%;
+}
+footer .copy{
+    color: #fff;
+}
+
+.page-wrapper{
+    margin: 50px auto;
+    padding: 20px 15px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+}
+
+.page-wrapper h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-block{
+    padding: 15px;
+}
+.w5{
+    width: 5%;
+}
+.w10{
+    width: 10%;
+}
+.w20{
+    width: 20%;
+}
+.w30{
+    width: 30%;
+}
+.W60{
+    width: 60%;
+}
+.w100{
+    width: 100%;
+}
+.articles{
+    margin-top: 15px;
+}
+.articles-inline{
+    padding-left: 15px;
+    flex-wrap: wrap;
+}
+.articles-inline:nth-of-type(odd){
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* ============ land mark page ===============*/
+
+.sight-container{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 15px 50px;
+}
+
+.sight-container h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.sight-container img{
+    width: 100%;
+}
+.sight-container .date{
+    font-weight: bold;
+}
+
+.map{
+    height: 400px;
+}
+
+
+.login-container{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px 15px 30px;
+}
+
+.login-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+#myTabContent{
+    margin-top: 20px;
+}
+
+
+/*================== Hotel Pages ===========================*/
+
+.user-log-out-btn{
+    margin-left: 10px;
+}
+
+.hotel-box img{
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hotels-area-section{
+    max-width: 1400px;
+    margin: 0 auto;
+   
+}
+.hotels-area-section h1{
+    text-align: center;
+    margin: 50px 0px 30px 0;
+
+}
+
+.hotel-grid{
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.hotel-grid::after{
+    clear: both;
+}
+.hotel-grid:after, .hotel-grid:before{
+    content: '';
+    display: table;
+}
+
+.hotel-grid li{
+    width: 600px;
+    height: 350px;
+    display: inline-block;
+    margin: 20px;
+
+}
+.hotel-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.hotel-box:hover{
+    transform: scale(1.05);
+}
+.hotel-img-1{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)), url(/images/card-8.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.hotel-img-2{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)), url(/images/hotel-7.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.hotel-img-3{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)), url(/images/hotel-8.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.hotel-img-4{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)), url(/images/hotel-9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hotel-img-5{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)), url(/images/hotel-10.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+.hotel-img-6{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)), url(/images/hotel-11.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.hotel-info{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.hotel-info h3{
+    font-family: 'Pacifico', cursive;
+	font-weight: 400;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
+
+.hotel-info p{
+    font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 10px 200px;
+	font-size: 14px;
+	line-height: 2;
+}
+
+/*=================== Cox's Hotel =================*/
+
+
+.hotel{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    clear: both;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 10px;
+    background:azure;
+}
+.cox-hotel-container h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.hotel-box1{
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-radius: 10px;
+    
+}
+ .cox-hotel-img1{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)),  url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cox-hotel-img2{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)),  url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cox-hotel-img3{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)),  url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cox-hotel-img4{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)),  url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cox-hotel-img5{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.10)),  url(/images/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-box2{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.hotel-box2 h3{
+    margin: 10px 5px 10px 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.hotel-box2 p{
+    padding:20px 30px ;
+}
+.hotel-box2 h4{
+    display: block;
+    float: right;
+   padding: 10px 20px 10px 5px;
+}
+.hotel-box2 button{
+    margin: 20px 0px 10px 30px;
+}

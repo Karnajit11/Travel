@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Poppins&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css"href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+</head>
+<body>
+
+    <!--=========================Navbar Started=================================-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Tour Guide</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          District
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Dhaka</a>
+                            <a class="dropdown-item" href="#">Chittagong</a>
+                            <a class="dropdown-item" href="#">sylhet</a>
+                            <a class="dropdown-item" href="#">Barishal</a>                        
+                            <a class="dropdown-item" href="#">Khulna</a>                        
+                            <a class="dropdown-item" href="#">Rangpur</a>                        
+                            <a class="dropdown-item" href="#">Rajshai</a>                        
+                            <a class="dropdown-item" href="#">Mymanshing</a>                        
+    
+                        </div>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Famous Place
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cox,Bazar</a>
+                        <a class="dropdown-item" href="#">Saint Martin</a>
+                        <a class="dropdown-item" href="#">Sajeek</a>
+                        <a class="dropdown-item" href="#">Rangamati</a>                        
+                        <a class="dropdown-item" href="#">Sundarban</a>                        
+                        <a class="dropdown-item" href="#">Jaflong</a>                        
+                        <a class="dropdown-item" href="#">Bisanakandi</a>                         
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact </a>
+                    </li>                  
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 call-us-form">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Phone number" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Call Us</button>
+                  </form>
+                </div>
+              </nav>
+
+            </div>
+
+          <!--=========================Navbar end=================================-->
+    </header>
+    <main>
+        <div class="container sight-container">
+            <h1><%= title %></h1>
+            <hr>
+            <img src="<%= imageURL %>" alt="">
+            <hr>
+            <p class="date"><%= date %></p>
+            <hr>
+            <p class="text"><%= text %></p>
+            <hr>
+            <div class="map"></div>
+        </div>
+    </main>   
+
+        <!--============== Model =====================-->
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Leave a Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form  class="email-request-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <input type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!--===================== Footer===================-->
+      <footer class="bg-dark"> 
+          <div class="container">
+              <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                      <p class="copy">@2020 All rights resurved by Team Hoper</p>
+                  </div>
+                  <div class="col-6 d-flex justify-content-end align-items-center">
+                      <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal">Leave a Message</button>
+                  </div>
+              </div>
+          </div>
+  
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/posts.js"></script>
+      <script src="js/emails.js"></script>
+      <script src="js/maps.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+  </html>

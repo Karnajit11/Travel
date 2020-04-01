@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+      <!--=========================Navbar Started=================================-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Tour Guide</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          District
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Dhaka</a>
+                            <a class="dropdown-item" href="#">Chittagong</a>
+                            <a class="dropdown-item" href="#">sylhet</a>
+                            <a class="dropdown-item" href="#">Barishal</a>                        
+                            <a class="dropdown-item" href="#">Khulna</a>                        
+                            <a class="dropdown-item" href="#">Rangpur</a>                        
+                            <a class="dropdown-item" href="#">Rajshai</a>                        
+                            <a class="dropdown-item" href="#">Mymanshing</a>                        
+    
+                        </div>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Famous Place
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cox,Bazar</a>
+                        <a class="dropdown-item" href="#">Saint Martin</a>
+                        <a class="dropdown-item" href="#">Sajeek</a>
+                        <a class="dropdown-item" href="#">Rangamati</a>                        
+                        <a class="dropdown-item" href="#">Sundarban</a>                        
+                        <a class="dropdown-item" href="#">Jaflong</a>                        
+                        <a class="dropdown-item" href="#">Bisanakandi</a>                         
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="/hotel">Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact </a>
+                    </li>
+                   
+    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 call-us-form">
+                    <button class="btn btn-outline-success my-2 my-sm-0 log-out-btn" type="submit">Log Out</button>
+                  </form>
+                </div>
+              </nav>
+
+            </div>
+
+          <!--=========================Navbar end=================================-->
+    </header>
+
+    <main>
+        <div class="container page-wrapper">
+            <h1>Admin Page</h1>
+            <hr>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-articles-tab" data-toggle="pill" href="#v-pills-articles" role="tab" aria-controls="v-pills-articles" aria-selected="true">Articles</a>
+                                <a class="nav-link" id="v-pills-mails-tab" data-toggle="pill" href="#v-pills-mails" role="tab" aria-controls="v-pills-mails" aria-selected="false">Mails</a>
+                                <a class="nav-link" id="v-pills-callback-tab" data-toggle="pill" href="#v-pills-callback" role="tab" aria-controls="v-pills-callback" aria-selected="false">Callback Request</a>
+                               
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-articles" role="tabpanel" aria-labelledby="v-pills-articles-tab">
+                                    <button class="btn btn-info create-post-btn">Add Post</button>
+                                    <div class="articles">
+                                      
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-mails" role="tabpanel" aria-labelledby="v-pills-mails-tab">Mails</div>
+                                <div class="tab-pane fade" id="v-pills-callback" role="tabpanel" aria-labelledby="v-pills-callback-tab"></div>
+                                <div class="tab-pane fade" id="v-pills-create-post" role="tabpanel" aria-labelledby="v-pills-create-post-tab">
+                                    <h2>Create post</h2>
+                                    <form action="" class="create-post-form">
+                                        <div class="form-group">
+                                            <label for="create-title">Title</label>
+                                            <input type="text" class="form-control" id="create-title" placeholder="Title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="create-district">District</label>
+                                            <input type="text" class="form-control" id="create-district" placeholder="District">
+                                        </div>
+                                        <div class="form-group">
+                                           <label for="create-image-url">Image</label>
+                                             <input type="text" class="form-control" id="create-image-url" placeholder="URL">
+                                            <p>or</p>
+                                            <input type="file" class="form-control form-control-file" id="create-image-file">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="create-text">Text</label>
+                                            <textarea class="form-control" id="create-text" rows="5"></textarea>
+                                        </div>
+                                        <button class="btn btn-success">Create Post</button>
+                                    </form>
+                                </div>
+                             <!-- ================== Update Form Start ================-->   
+                                <div class="tab-pane fade" id="v-pills-update-post" role="tabpanel" aria-labelledby="v-pills-update-post-tab">
+                                  <h2>Update post</h2>
+                                  <form action="" class="update-post-form">
+                                      <div class="form-group">
+                                          <label for="update-title">Title</label>
+                                          <input type="text" class="form-control" id="update-title" placeholder="Title">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="update-text">Text</label>
+                                          <textarea class="form-control" id="update-text" rows="5"></textarea>
+                                      </div>
+                                      <button class="btn btn-success">Update Post</button>
+                                  </form>
+                              </div>
+                            <!-- ================== Update Form End ================--> 
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/posts.js"></script>
+    <script src="/admin/js/create-post.js"></script>
+    <script src="/admin/js/delete-post.js"></script>
+    <script src="/admin/js/update-post.js"></script>
+    <script src="/admin/js/callback-requests.js"></script>
+    <script src="/admin/js/emails.js"></script>
+    <script src="/admin/js/main.js"></script>
+</body>
+</html>
